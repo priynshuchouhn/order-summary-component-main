@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
+@media only screen and (min-width: 700px){
+    .bgImage{
+        background: url(./images/pattern-background-desktop.svg) no-repeat
+         center/cover;
+         height: 50vh;
+    }
+
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+}
+.bgImage{
+    background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+     height: 400px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     z-index: -1;
+}
+.container {
+  margin: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 350px;
+  color: hsl(224, 23%, 55%);
+}
+.container h1 {
+  color: black;
+}
+img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+button {
+  border: 0;
+  width: 100%;
+  margin: 5px;
+  height: 50px;
+  border-radius: 8px;
+  font-family: "Red Hat display", sans-serif;
+  background-color: white;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+.buttons a {
+  padding-top: 20px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+#payButton {
+  box-shadow: 5px 10px 8px hsl(224, 87%, 65%);
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 90%;
+  align-items: center;
+}
+p {
+  padding: 0 10px;
+  text-align: center;
+}
+.subscription {
+  color: hsl(224, 23%, 55%);
+  border-radius: 10px;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  width: 90%;
+  height: 100px;
+}
+.subscription strong {
+  color: black;
+}
+.subText {
+  font-weight: 500;
+  padding: 20px 10px;
+}
+.subImg {
+  padding: 20px 10px;
+}
+.subButton {
+  padding: 30px 10px;
+}
+.subscription a {
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+  font-weight: 700;
+}
+.subscription a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+}
+#payButton:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+#cancelButton:hover {
+  color: black;
+  cursor: pointer;
+}
